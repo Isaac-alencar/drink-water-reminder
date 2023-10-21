@@ -1,15 +1,15 @@
 :root {
   --font-family: "Poppins", sans-serif;
-  --blue-dark: #7FC4ED;
-  --neutral-gray-100: #E1E1E6;
-  --neutral-gray-200: #C4C4CC;
-  --blue-dark: #7FC4ED;
-  --gray-100: #659ABA
-  --gray-200: #FBF9FE
-  --gray-300: #322F40
-  --gray-400: #1D1B26
-  --gray-500: #0F0E13
-  --text: #C4C4CC
+  --blue: #7fc4ed;
+  --neutral-gray-100: #e1e1e6;
+  --neutral-gray-200: #c4c4cc;
+  --blue-dark: #7fc4ed;
+  --gray-100: #659aba;
+  --gray-200: #fbf9fe;
+  --gray-300: #322f40;
+  --gray-400: #1d1b26;
+  --gray-500: #0f0e13;
+  --text: #c4c4cc;
 }
 
 * {
