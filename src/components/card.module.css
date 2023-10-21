@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  width: 208px;
+  height: 350px;
+  background-color: var(--blue);
+}
+
+.percentage {
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--gray-500);
+}
+
+.imgContainer {
+  height: 95px;
+  width: 95px;
+  min-width: 95px;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.textContainer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContainer span,
+.textContainer strong {
+  color: var(--gray-500);
+}
