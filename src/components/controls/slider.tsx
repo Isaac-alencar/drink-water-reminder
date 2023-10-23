@@ -1,28 +1,20 @@
 "use client";
 
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent } from "react";
 
 import styles from "./slider.module.css";
 
 type SliderProps = {
-  max: number;
-  value: number;
+  label: string;
   title: string;
+  value: number;
   onChange: (value: number) => void;
 };
 
-export const Slider = ({
-  max,
-  value: sliderValue,
-  title,
-  onChange,
-}: SliderProps) => {
-  const [value, setValue] = useState<number>(0);
+export const Slider = ({ label, value, title, onChange }: SliderProps) => {
   const backgroundWidth = (value / 100) * 100 + "%";
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setValue(Number(e.target.value));
-
     onChange(Number(e.target.value));
   };
 
@@ -30,7 +22,7 @@ export const Slider = ({
     <div className={styles.wrapper}>
       <div className={styles.header}>
         <strong>{title}</strong>
-        <span>{max}ml</span>
+        <span>{label}</span>
       </div>
       <div className={styles.sliderContainer}>
         <input
@@ -39,7 +31,7 @@ export const Slider = ({
           max={100}
           step={10}
           className={styles.slider}
-          value={sliderValue}
+          value={value}
           onChange={handleInputChange}
         />
         <div
