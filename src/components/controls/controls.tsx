@@ -1,31 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import { useGoal } from "@/providers/GoalProvider";
 
 import { Slider } from "./slider";
 
 import styles from "./controls.module.css";
 
 export const Controls = () => {
-  const [goal, setGoal] = useState<number>(0);
-  const [step, setStep] = useState<number>(0);
+  const { dailyGoal, quantityPerTimer, setQuantityPerTime, setDailyGoal } =
+    useGoal();
 
   return (
     <div className={styles.controls}>
       <Slider
-        max={3000}
-        value={goal}
+        label="3000ml"
         title="Meta diária"
+        value={dailyGoal}
         onChange={(value) => {
-          setGoal(value);
+          setDailyGoal(value);
         }}
       />
       <Slider
-        max={300}
-        value={step}
+        label="300ml"
         title="Quantidade por timer"
+        value={quantityPerTimer}
         onChange={(value) => {
-          setStep(value);
+          setQuantityPerTime(value);
         }}
       />
     </div>
