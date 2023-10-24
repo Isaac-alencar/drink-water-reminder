@@ -11,7 +11,7 @@ type CardProps = {
 export const Card = ({ goal, percentage, title }: CardProps) => {
   return (
     <div className={styles.container}>
-      <span className={styles.percentage}>{percentage * 100}%</span>
+      <span className={styles.percentage}>{percentage}%</span>
       <div className={styles.imgContainer}>
         <Image
           src="/icons/water.svg"
