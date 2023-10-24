@@ -1,4 +1,4 @@
-const DEFAULT_TIMER_VALUE = 5;
+const DEFAULT_TIMER_VALUE = 60;
 
 export const initialState = {
   counter: DEFAULT_TIMER_VALUE,

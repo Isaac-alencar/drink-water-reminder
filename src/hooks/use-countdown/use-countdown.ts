@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useReducer, useRef } from "react";
+import { useEffect, useReducer, useRef } from "react";
 
 import { countdownReducer, initialState } from "./use-countdown.reduce";
 
@@ -16,7 +16,7 @@ export const useCountdown = () => {
     const DELAY = 1000;
     intervalRef.current = setInterval(
       () => countdownDispatch({ type: "DECREMENT_COUNTER" }),
-      DELAY
+      DELAY * 60
     );
   };
 
