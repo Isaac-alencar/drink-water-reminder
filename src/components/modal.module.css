@@ -1,0 +1,65 @@
+.modal {
+  top: 50%;
+  left: 50%;
+  width: 299px;
+  height: 254px;
+  border: 0;
+  border-radius: 23px;
+  background: var(--base-gray-400, var(--gray-400));
+  box-shadow: 17px 25px 57px 0px rgba(17, 16, 24, 0.25);
+
+  transform: translate(-50%, -50%);
+}
+
+.modal::backdrop {
+  opacity: 0.7;
+  background-color: #121317;
+}
+
+.card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card button {
+  position: absolute;
+  right: 12.5px;
+  top: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--gray-300);
+}
+
+.card button img {
+  width: 24px;
+  height: 24px;
+}
+
+.card img {
+  flex: 1;
+  display: flex;
+  width: 60px;
+  height: 60px;
+}
+
+.card strong {
+  margin-top: 1rem;
+  color: var(--blue);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
