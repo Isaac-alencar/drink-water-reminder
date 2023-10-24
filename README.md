@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Drink Water Reminder app
 
-## Getting Started
+## Drink Water Reminder app
 
-First, run the development server:
+This is a simple app designed to remind you to drink water regularly throughout the day. It helps you stay hydrated and maintain a healthy lifestyle.
+
+### Demo Site
+
+You can access the Drink Water Reminder app [here](https://drink-water-reminder-silk.vercel.app/).
+
+### Thumbnail
+
+![Demonstration](https://github.com/Isaac-alencar/drink-water-reminder/assets/58452911/17ff7519-1ee4-46e8-925d-0c7a00707e05)
+
+
+### Features 📌
+
+- Set customizable reminders to drink water at specific intervals
+- Track your daily water intake
+- Receive notifications to remind you to drink water
+- View your drinking progress
+
+### Installation 💻
+
+To use the Drink Water Reminder app, follow these steps:
+
+1. Clone the repository from GitHub:
+
+```bash
+git clone <https://github.com/Isaac-alencar/drink-water-reminder.git>
+```
+
+1. Install the required dependencies:
+
+```bash
+npm install
+```
+
+1. Start the app:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Usage 📢
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Open the app on your device.
+2. Set your preferred reminder intervals.
+3. Start receiving notifications to remind you to drink water.
+4. Log your water intake throughout the day.
+5. Track your progress and stay hydrated!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Contributing 🙌
 
-## Learn More
+Contributions are welcome! If you have any ideas for improvements or bug fixes, feel free to submit a pull request.
 
-To learn more about Next.js, take a look at the following resources:
+### License 📃
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
