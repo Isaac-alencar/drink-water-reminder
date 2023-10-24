@@ -1,25 +1,27 @@
 "use client";
 
-import { useGoal } from "@/providers/GoalProvider";
-
 import { Card } from "@/components/card";
 import { Timer } from "@/components/timer";
-import { Controls } from "@/components/controls/";
+import { Modal } from "@/components/modal";
+import { Controls } from "@/components/controls";
+
+import { useReminder } from "@/providers/reminder.provider";
 
 import styles from "./page.module.css";
 
 export default function Home() {
-  const { dailyGoal, currentProgress } = useGoal();
+  const { controls, countdown } = useReminder();
 
   return (
     <main className={styles.main}>
       <Card
-        goal={`${((dailyGoal * 3) / 100).toPrecision(2)}L`}
-        percentage={currentProgress}
+        goal={`${((controls.dailyGoal * 3) / 100).toPrecision(2)}L`}
+        percentage={controls.currentProgress}
         title="Beber água"
       />
       <Controls />
       <Timer />
+      <Modal shouldDisplayModal={countdown.finishCounting} />
     </main>
   );
 }
