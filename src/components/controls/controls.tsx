@@ -8,8 +8,6 @@ import styles from "./controls.module.css";
 export const Controls = () => {
   const { controls, dispatchControls } = useReminder();
 
-  console.log(controls.dailyGoal);
-
   return (
     <div className={styles.controls}>
       <Slider
