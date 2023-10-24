@@ -3,7 +3,7 @@ type Reducer<S, A> = (prevState: S, action: A) => S;
 export const initialState = {
   dailyGoal: 50,
   quantityPerTimer: 100,
-  currentIteration: 4,
+  currentIteration: 0,
   currentProgress: 0,
 };
 

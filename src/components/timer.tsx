@@ -1,24 +1,28 @@
 "use client";
 
-import { useCountdown } from "@/hooks/useCountdown";
+import { useReminder } from "@/providers/reminder.provider";
 
 import styles from "./timer.module.css";
 
 export const Timer = () => {
-  const { isCounting, startCountdown, timer } = useCountdown();
+  const HOUR_IN_MINUTES = 60;
+  const { countdown, startCountdown } = useReminder();
+
+  const hour = Math.floor(countdown.counter / HOUR_IN_MINUTES);
+  const minutes = countdown.counter % HOUR_IN_MINUTES;
 
   return (
     <>
       <div className={styles.container}>
-        <TimerDisplay amount={timer.hour.toString()} timeIndicator="h" />
+        <TimerDisplay amount={hour.toString()} timeIndicator="h" />
         <span>:</span>
-        <TimerDisplay amount={timer.minutes.toString()} timeIndicator="m" />
+        <TimerDisplay amount={minutes.toString()} timeIndicator="m" />
       </div>
       <button
         type="button"
         className={styles.button}
         onClick={startCountdown}
-        disabled={isCounting}
+        disabled={countdown.isCounting}
       >
         Começar
       </button>
