@@ -20,6 +20,11 @@ You can access the Drink Water Reminder app [here](https://drink-water-reminder-
 - Receive notifications to remind you to drink water
 - View your drinking progress
 
+### Techs
+- Nextjs
+- CSS Modules
+- Context API
+
 ### Installation 💻
 
 To use the Drink Water Reminder app, follow these steps:
