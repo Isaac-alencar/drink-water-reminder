@@ -5,3 +5,16 @@
   gap: 27px;
   padding: 57px 54px 67px;
 }
+
+@media screen and (min-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-areas:
+      "card timer"
+      "card controls"
+      "card button";
+    grid-template-columns: (2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+}
