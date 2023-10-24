@@ -3,7 +3,7 @@
 import "./globals.css";
 import "@fontsource/poppins";
 
-import { SliderControlProvider } from "@/providers/GoalProvider";
+import { ReminderProvider } from "@/providers/reminder.provider";
 
 export default function RootLayout({
   children,
@@ -14,7 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <title>Drink Water reminder</title>
       <body>
-        <SliderControlProvider>{children}</SliderControlProvider>
+        <ReminderProvider>{children}</ReminderProvider>
       </body>
     </html>
   );
